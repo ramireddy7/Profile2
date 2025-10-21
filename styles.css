@@ -1,0 +1,61 @@
+:root{
+  --bg:#0b0f14; --panel:#0f1720; --muted:#9aa6b2; --accent:#7bd389;
+  --card:#0b1220; --glass: rgba(255,255,255,0.03);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#06111a 0%, #08131a 100%);
+  color:#dbe7ee; min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Entry modal */
+.entry{
+  position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;
+  background:linear-gradient(180deg,rgba(2,6,23,0.75), rgba(0,0,0,0.6));
+  backdrop-filter: blur(6px);
+}
+.entry h1{font-size:38px;margin:0}
+.entry p{margin:0;color:var(--muted)}
+.entry .buttons{display:flex;gap:12px;margin-top:14px}
+.entry button{
+  background:transparent;border:1px solid rgba(255,255,255,0.12); padding:10px 18px;border-radius:8px;color:inherit;cursor:pointer;
+}
+.entry button:hover{transform:translateY(-3px); transition:all .15s ease}
+
+/* Page layout for classic */
+.page{padding:40px;max-width:900px;margin:0 auto}
+.hidden{display:none}
+.classic-header{display:flex;flex-direction:column;gap:10px;padding:18px;background:var(--glass);border-radius:12px;margin-bottom:18px}
+.classic-header h1{margin:0;font-size:28px}
+.classic-header .sub{color:var(--muted);margin:0}
+.contact{font-size:13px;color:var(--muted)}
+
+/* Sections */
+.section{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px;margin-bottom:14px}
+.section h2{margin:0 0 8px 0;color:#e7f6f0}
+.tag-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tag-list li{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:8px;font-size:13px}
+
+/* Terminal style interactive */
+.terminal{width:100%;max-width:960px;margin:30px auto;background:linear-gradient(180deg,#000 0,#071018 100%);border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.7);overflow:hidden;border:1px solid rgba(255,255,255,0.04)}
+.term-header{display:flex;align-items:center;justify-content:space-between;padding:10px;background:rgba(255,255,255,0.02)}
+.term-header .dots span{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;background:#ff5f56}
+.term-header .title{color:var(--muted);font-size:13px}
+.term-body{min-height:260px;padding:18px;font-family: "Courier New", monospace;font-size:14px;color:#cdebd6; white-space:pre-wrap; overflow:auto}
+.cmd-form{display:flex;padding:12px;background:#021018;border-top:1px solid rgba(255,255,255,0.02);align-items:center}
+.prompt{padding-right:8px;color:#7bd389}
+.cmd-form input{flex:1;border:0;background:transparent;color:#cdebd6;outline:none;font-family:inherit;font-size:14px}
+
+/* small */
+.small{font-size:12px;color:var(--muted);margin-top:10px}
+.interactive-hint{color:var(--muted);font-size:13px;text-align:center;margin-top:12px}
+
+/* responsive */
+@media (max-width:640px){
+  .page{padding:18px}
+  .entry h1{font-size:28px}
+}
