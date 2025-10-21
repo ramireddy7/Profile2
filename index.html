@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rami Reddy — Profile</title>
+  <meta name="description" content="Personal profile website for Rami Reddy — about, experience, certifications, skills and more." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Chart.js from CDN for interactive skill charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1 id="name">Your Name</h1>
+        <p id="headline">Headline / Title</p>
+      </div>
+      <nav class="header-controls">
+        <label class="mode-toggle">
+          <input type="checkbox" id="modeSwitch" />
+          <span class="toggle-label">Interactive mode</span>
+        </label>
+        <a id="linkedinBtn" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <section id="summary" class="card">
+      <h2>About</h2>
+      <div id="about"></div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <div id="experienceList"></div>
+    </section>
+
+    <section id="recognition" class="card">
+      <h2>Recognitions & Awards</h2>
+      <div id="recognitionsList"></div>
+    </section>
+
+    <section id="certifications" class="card">
+      <h2>Certifications</h2>
+      <div id="certificationsList"></div>
+    </section>
+
+    <section id="courses" class="card">
+      <h2>Courses & Labs</h2>
+      <div id="coursesList"></div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div id="skillsList" class="skills-grid"></div>
+      <canvas id="skillsChart" style="max-width:700px;"></canvas>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <div id="contactInfo"></div>
+      <a id="downloadBtn" class="btn">Download PDF</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Generated from profile.json — built for GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
