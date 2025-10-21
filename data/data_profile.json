@@ -1,0 +1,48 @@
+{
+  "name": "Rami Reddy Allam",
+  "headline": "Software Engineer / Cloud Enthusiast",
+  "about": "Short summary about you. Paste your LinkedIn summary or a personal bio here. Keep it to 2-4 short paragraphs describing your focus, specialties and what you're looking for.",
+  "contact": {
+    "email": "your.email@example.com",
+    "location": "City, Country",
+    "website": "https://your-site.example"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/rami-reddy-allam-423a47104/"
+  },
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Company Name",
+      "period": "2022 - Present",
+      "location": "City, Country",
+      "summary": "Brief summary of the role, impact and technologies used. Include measurable outcomes if possible."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Previous Company",
+      "period": "2019 - 2022",
+      "location": "City, Country",
+      "summary": "Responsibilities, projects, achievements."
+    }
+  ],
+  "recognitions": [
+    "Award or recognition 1",
+    "Featured in X program"
+  ],
+  "certifications": [
+    { "name": "Certification A", "issuer": "Issuer", "year": "2024" },
+    { "name": "Certification B", "issuer": "Issuer", "year": "2023" }
+  ],
+  "courses": [
+    "Course: Topic — Platform",
+    "Lab: Hands-on Lab Name"
+  ],
+  "skills": [
+    { "name": "JavaScript", "level": 90 },
+    { "name": "React", "level": 85 },
+    { "name": "Node.js", "level": 80 },
+    { "name": "AWS", "level": 75 },
+    { "name": "Docker", "level": 70 }
+  ]
+}
